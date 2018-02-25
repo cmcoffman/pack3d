@@ -2,6 +2,10 @@
 
 Tightly pack 3D models.
 
+This is me fiddling around with this to try and get it to work for packing 3D printer platers.
+
+I'll just need to disallow some kinds of transformation...
+
 ### Installation
 
 First, install Go, set your GOPATH, and make sure $GOPATH/bin is on your PATH.
@@ -15,8 +19,8 @@ export PATH="$PATH:$GOPATH/bin"
 Next, fetch and build the two binaries.
 
 ```
-go get github.com/fogleman/pack3d/cmd/pack3d
-go get github.com/fogleman/pack3d/cmd/binpack
+go get github.com/cmcoffman/pack3d/cmd/pack3d
+go get github.com/cmcoffman/pack3d/cmd/binpack
 ```
 
 ### Usage Examples
