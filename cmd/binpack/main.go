@@ -76,9 +76,10 @@ func main() {
 			id := i*len(Rotations) + j
 			s := box.Transform(m).Size()
 			sx := int(math.Ceil((s.X + P*2) * S))
-			sy := int(math.Ceil((s.Y + P*2) * S))
-			sz := int(math.Ceil((s.Z + P*2) * S))
-			items = append(items, binpack.Item{id, score, binpack.Vector{sx, sy, sz}})
+			// sy := int(math.Ceil((s.Y + P*2) * S))
+			// sz := int(math.Ceil((s.Z + P*2) * S))
+			// items = append(items, binpack.Item{id, score, binpack.Vector{sx, sy, sz}})
+			items = append(items, binpack.Item{id, score, binpack.Vector{sz}})
 		}
 		ok = true
 	}
