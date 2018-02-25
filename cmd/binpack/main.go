@@ -23,12 +23,12 @@ func init() {
 	for i := 0; i < 2; i++ {
 		for j := 0; j < 3; j++ {
 			m := fauxgl.Rotate(fauxgl.Vector{0, 0, 1}, float64(i)*math.Pi/2)
-			switch j {
-			case 1:
-				m = m.Rotate(fauxgl.Vector{1, 0, 0}, math.Pi/2)
-			case 2:
-				m = m.Rotate(fauxgl.Vector{0, 1, 0}, math.Pi/2)
-			}
+			// switch j {
+			// case 1:
+			// 	m = m.Rotate(fauxgl.Vector{1, 0, 0}, math.Pi/2)
+			// case 2:
+			// 	m = m.Rotate(fauxgl.Vector{0, 1, 0}, math.Pi/2)
+			// }
 			Rotations = append(Rotations, m)
 		}
 	}
